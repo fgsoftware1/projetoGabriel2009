@@ -27,6 +27,10 @@ public class Programa_Televisao {
         return this.Descricao;
     }
 
+    public double getDuracao(){
+        return this.Duracao;
+    }
+
     public int getClassificacao(){
         return this.Classificacao;
     }
