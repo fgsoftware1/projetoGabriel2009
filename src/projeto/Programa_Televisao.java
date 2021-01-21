@@ -19,19 +19,39 @@ public class Programa_Televisao {
         return this.ID_programa;
     }
 
+    public void setID_programa(int id_programa){
+        this.ID_programa = id_programa;
+    }
+
     public String getNome(){
         return this.Nome;
+    }
+
+    public void setNome(String nome){
+        this.Nome = nome;
     }
 
     public String getDescricao(){
         return this.Descricao;
     }
 
+    public void setDescricao(String descricao){
+        this.Descricao = descricao;
+    }
+
     public double getDuracao(){
         return this.Duracao;
     }
 
+    public void setDuracao(double duracao){
+        this.Duracao = duracao;
+    }
+
     public int getClassificacao(){
         return this.Classificacao;
+    }
+
+    public void setClassificacao(int classificacao){
+        this.Classificacao = classificacao;
     }
 }
