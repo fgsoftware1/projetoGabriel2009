@@ -45,5 +45,8 @@ public class Calendario extends Programa_Televisao implements ICalendario {
         this.Ano = ano;
     }
     
-    c
+    @Override
+    public String MostraMensagem() {
+    	return new String(super.MostraMensagem() + "dia: " + Dia + "mes: " + Mes + "ano: " + Ano)
+    }
 }
