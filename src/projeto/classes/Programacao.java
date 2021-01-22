@@ -1,6 +1,8 @@
-package projeto;
+package projeto.classes;
 
-public class Programacao {
+import projeto.interfaces.IProgramacao;
+
+public class Programacao implements IProgramacao {
     private double Hora_inicio;
     private double Hora_fim;
 

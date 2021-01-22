@@ -1,13 +1,15 @@
-package projeto;
+package projeto.classes;
 
-public class Programa_Televisao {
+import projeto.interfaces.ITipo_Programa;
+
+public class Tipo_Programa extends Programa_Televisao implements ITipo_Programa {
     private int ID_programa;
     private String Nome;
     private String Descricao;
     private double Duracao;
     private int Classificacao;
 
-    public Programa_Televisao() {
+    public Tipo_Programa() {
         ID_programa = 0;
         Nome = "";
         Descricao = "";

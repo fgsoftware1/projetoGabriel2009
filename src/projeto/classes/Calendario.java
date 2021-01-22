@@ -1,6 +1,8 @@
-package projeto;
+package projeto.classes;
 
-public class Calendario {
+import projeto.interfaces.ICalendario;
+
+public class Calendario extends Programa_Televisao implements ICalendario {
     private int Dia;
     private String Mes;
     private int Ano;
