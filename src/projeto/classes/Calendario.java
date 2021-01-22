@@ -8,9 +8,17 @@ public class Calendario extends Programa_Televisao implements ICalendario {
     private int Ano;
 
     public Calendario(){
+    	super();
         Dia = 0;
         Mes = "";
         Ano = 0;
+    }
+    
+    public Calendario(int Dia1,String Mes1,int Ano1) {
+    	super(id1,nome1,descricao1,duracao1,classificacao1)
+    	this.Dia = Dia1;
+    	this.Mes = Mes1;
+    	this.Ano = Ano1;
     }
 
     public int getDia(){
@@ -36,4 +44,6 @@ public class Calendario extends Programa_Televisao implements ICalendario {
     public void setAno(int ano){
         this.Ano = ano;
     }
+    
+    c
 }
