@@ -17,43 +17,56 @@ public class Programa_Televisao implements IPrograma_Televisao {
         Classificacao = 0;
     }
 
-    public int getID_programa(){
+    public Programa_Televisao(int ID_programa1, String Nome1, String Descricao1, double Duracao1, int Classificacao1) {
+        this.ID_programa = ID_programa1;
+        this.Nome = Nome1;
+        this.Descricao = Descricao1;
+        this.Duracao = Duracao1;
+        this.Classificacao = Classificacao1;
+    }
+
+    public int getID_programa() {
         return this.ID_programa;
     }
 
-    public void setID_programa(int id_programa){
+    public void setID_programa(int id_programa) {
         this.ID_programa = id_programa;
     }
 
-    public String getNome(){
+    public String getNome() {
         return this.Nome;
     }
 
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.Nome = nome;
     }
 
-    public String getDescricao(){
+    public String getDescricao() {
         return this.Descricao;
     }
 
-    public void setDescricao(String descricao){
+    public void setDescricao(String descricao) {
         this.Descricao = descricao;
     }
 
-    public double getDuracao(){
+    public double getDuracao() {
         return this.Duracao;
     }
 
-    public void setDuracao(double duracao){
+    public void setDuracao(double duracao) {
         this.Duracao = duracao;
     }
 
-    public int getClassificacao(){
+    public int getClassificacao() {
         return this.Classificacao;
     }
 
-    public void setClassificacao(int classificacao){
+    public void setClassificacao(int classificacao) {
         this.Classificacao = classificacao;
+    }
+
+    public String MostraMensagem() {
+        return new String("ID_programa: " + ID_programa + " Nome: " + Nome + "Descricao" + Descricao + "Duracao" + Duracao + "Classificao" + Classificacao) {
+        };
     }
 }
