@@ -1,5 +1,6 @@
 language: java
-os: windows
+os: linux
+dist: xenial
 root: false
 
 jdk:
