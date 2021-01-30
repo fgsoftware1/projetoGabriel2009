@@ -1,12 +1,14 @@
 language: java
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-env:
-  global:
-    - CODECOV_TOKEN="b949a754-f5b0-4353-8a5a-7455e157ba35"
-    - export PATH=$JAVA_HOME/bin:$PATH
+sudo: false
+
 jdk:
   - oraclejdk8
+  - oraclejdk11
+  - oraclejdk14
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
 notifications:
     email:
       recipients:
