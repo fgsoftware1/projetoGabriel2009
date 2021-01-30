@@ -3,3 +3,11 @@ jdk:
   - oraclejdk8
   - oraclejdk9
   - oraclejdk14
+  - notifications:
+      email:
+        recipients:
+          - fgsoftwarestudio@gmail.com
+          - fgygh5804@gmail.com
+          - 2009@epcarvalhais.org
+        on_success: always
+        on_failure: always
