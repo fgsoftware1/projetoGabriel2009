@@ -13,7 +13,7 @@ public class Programacao extends Programa_Televisao implements IProgramacao {
     }
     
     public Programacao(int ID_programa1,String Nome1,String Descricao1,double Duracao1,int Classificacao1,double Hora_inicio1, double Hora_fim1) {
-    	super(id1,nome1,descricao1,duracao1,classificacao1)
+    	super(id1,nome1,descricao1,duracao1,classificacao1);
     	this.Hora_inicio = Hora_inicio1;
     	this.Hora_fim = Hora_fim1;
     	}

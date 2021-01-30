@@ -1,6 +1,5 @@
 package projeto.classes;
 
-import com.sun.istack.internal.NotNull;
 import projeto.interfaces.IPrograma_Televisao;
 
 public class Programa_Televisao implements IPrograma_Televisao {
