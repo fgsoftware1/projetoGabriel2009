@@ -19,12 +19,12 @@ public class Tipo_Programa extends Programa_Televisao implements ITipo_Programa 
     }
     
     public Tipo_Programa(int ID_programa1,String Nome1,String Descricao1,double Duracao1,int Classificacao1) {
-    	super(id1,nome1,descricao1,duracao1,classificacao1)
+    	super(id1,nome1,descricao1,duracao1,classificacao1);
     	this.ID_programa = ID_programa1;
     	this.Nome = Nome1;
     	this.Descricao = Descricao1;
     	this.Duracao = Duracao1;
-    	this.Classificacao = Classificacao1
+    	this.Classificacao = Classificacao1;
     }
 
     public int getID_programa(){
