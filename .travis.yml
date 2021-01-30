@@ -1,13 +1,17 @@
 language: java
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+env:
+  global:
+    - CODECOV_TOKEN="b949a754-f5b0-4353-8a5a-7455e157ba35"
+    - export PATH=$JAVA_HOME/bin:$PATH
 jdk:
   - oraclejdk8
-  - oraclejdk9
-  - oraclejdk14
-  - notifications:
-      email:
-        recipients:
-          - fgsoftwarestudio@gmail.com
-          - fgygh5804@gmail.com
-          - 2009@epcarvalhais.org
-        on_success: always
-        on_failure: always
+notifications:
+    email:
+      recipients:
+        - fgsoftwarestudio@gmail.com
+        - fgygh5804@gmail.com
+        - 2009@epcarvalhais.org
+      on_success: always
+      on_failure: always
