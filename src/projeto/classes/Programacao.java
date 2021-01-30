@@ -36,6 +36,6 @@ public class Programacao extends Programa_Televisao implements IProgramacao {
     
     @Override
     public String MostraMensagem() {
-    	return new String(super.MostraMensagem() + "hora de inicio: " + Hora_inicio + "hora de fim: " + Hora_fim)
+        return new String(super.MostraMensagem() + "hora de inicio: " + Hora_inicio + "hora de fim: " + Hora_fim);
     }
 }

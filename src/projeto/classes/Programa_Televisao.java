@@ -67,7 +67,6 @@ public class Programa_Televisao implements IPrograma_Televisao {
     }
 
     public String MostraMensagem() {
-        return new String( "ID_programa: " + ID_programa + " Nome: " + Nome + "Descricao" + Descricao + "Duracao" + Duracao + "Classificao" + Classificacao) {
-        };
+        return new String( "ID_programa: " + ID_programa + " Nome: " + Nome + "Descricao" + Descricao + "Duracao" + Duracao + "Classificao" + Classificacao);
     }
 }

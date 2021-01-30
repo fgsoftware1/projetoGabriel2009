@@ -69,6 +69,6 @@ public class Tipo_Programa extends Programa_Televisao implements ITipo_Programa 
     
     @Override
     public String MostraMensagem() {
-    	return new String(super.MostraMensagem() + "id do programa: " + ID_programa + "nome: " + Nome + "descricao: " + Descricao + "duracao:" + Duracao + "classificacao: " + Classificacao)
+    	return new String(super.MostraMensagem() + "id do programa: " + ID_programa + "nome: " + Nome + "descricao: " + Descricao + "duracao:" + Duracao + "classificacao: " + Classificacao);
     }
 }
